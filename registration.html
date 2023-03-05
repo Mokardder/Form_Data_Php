@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Dev</title>
+
+
+  </head>
+  <body>
+
+
+
+
+
+<div class="container">
+
+<form action="show.php" method="post">
+
+
+  <!-- Fieldset -->
+  <fieldset>
+    <legend> <u> Student Registration</u></legend>
+
+    <div class="fields">
+    <!-- first name -->
+<label for="fname">First Name <span class="star">*</span> :</label>
+<input name="Fname" type="text" class="input" placeholder="Your First Name" id="fname" required maxlength="10"/>  <span class="star">(Max 10 character)</span>
+<br>
+<br>
+
+<!-- last name -->
+<label for="lname">Last Name <span class="star">*</span> :</label>
+<input name="lname" type="text" class="input" id="lname" placeholder="Enter Your Name" required maxlength="10"> <span class="star">(Max 10 character)</span>
+<br>
+<br>
+
+<!-- gender -->
+
+<label for="gender">Gender :</label>
+<input type="radio" class="input" required id="gender" name="gender"value="Male"> Male
+<input type="radio" class="input" required id="gender" name="gender" value="Female"> Female
+<br>
+<br>
+
+<!-- date of birth -->
+
+<label for="dob"> Date of Birth <span class="star">*</span> :</label>
+<input name="dob" type="date" class="input" id="dob" required>
+
+<br>
+<br>
+
+<!-- regex pattern copied from google -->
+
+<label for="mob">Mobile No <span class="star">*</span> :</label>
+<input name="mobile" type="tel" class="input" id="mob" pattern="^9\d{9}$" min="0" max="10" required> 
+
+<br>
+<br>
+
+<!-- email -->
+
+
+<label for="email">Email (Optional) :</label>
+<input name="email" type="email" class="input" id="email" title="Enter Your Email name@gmail.com" placeholder="abcd@domain_name.com">
+
+<br>
+<br>
+
+<!-- Address  -->
+
+<p><label for="address">Address :</label></p>
+<textarea name="address" class="input" id="address" title="This is enough space to fill out your address" cols="20" rows="3"></textarea>
+
+
+<br>
+<br>
+
+<!-- Village  -->
+
+<label for="city" >Village <span class="star">*</span> :</label>
+<select class="input" name="city" id="city" required>
+  <option value=""><--Select--></option>
+<option value="Padmalavpur" alt>Padmalavpur</option>
+<option value="Rampur">Rampur</option>
+<option value="Kumarduni">Kumarduni</option>
+</select>
+
+<br>
+<br>
+
+<!-- Postal Code  -->
+
+
+<label for="postal">Pincode :</label>
+<input name="postal" class="input" id="postal" type="number" title="Postal Code -- 743126" maxlength="6">
+
+
+
+<br>
+<br>
+
+
+
+<label for="state">State :</label>
+<input name="state"  class="input" type="text" value="West Bengal" title="State : West Bengal (Disabled)" disabled>
+
+
+<br>
+<br>
+
+
+
+<label for="state">Country :</label>
+<input name="country" class="input" type="text" value="India" title="Country : India (Disabled)" disabled>
+
+<br>
+<br>
+
+<!-- Hobbies  -->
+<br>
+<br>
+
+
+
+<label for="quali"> Qualifications :</label>
+<br><br>
+<table id="quali" title="Qualification : null and undefined are placed cause i've forgot what was my percentage and years">
+<tr>
+
+<th style="color:blue; align-items: center">Name of Exams</th>
+<th style="color:blue" >Board of Exams</th>
+<th style="color:blue">Percentage</th>
+<th style="color:blue">Year of Exams</th>
+
+</tr>
+<tr>
+  <td>
+    Class X
+  </td>
+  <td>
+    WBBSE
+  </td>
+  <td>
+    <i>null</i>
+  </td>
+  <td>
+    <i>null</i>
+  </td>
+</tr>
+<tr>
+  <td>
+    Class XII
+  </td>
+  <td>
+    WBCHSE
+  </td>
+  <td>
+    <i>undefined</i>
+  </td>
+  <td>
+    <i>undefined</i>
+  </td>
+</tr>
+<tr>
+  <td>
+    College
+  </td>
+  <td>
+    WBSU
+  </td>
+  <td>
+    <i>null</i>
+  </td>
+  <td>
+    <i>null</i>
+  </td>
+</tr>
+</table>
+
+
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+</div>
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+</html>
